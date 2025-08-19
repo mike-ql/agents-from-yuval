@@ -42,18 +42,28 @@ Document features:
 ### Unstructured data
 
 #### CSV files explained
-**1. Monthly Revenue Data (monthly_revenue_2024.csv)**  
+1. **Monthly Revenue Data (monthly_revenue_2024.csv)**  
 This tracks how much money the clinic makes each month.  
-Gross Charges = what they bill patients  
-Contractual Adjustments = discounts they must give to insurance companies  
-Collections = actual cash received  
-DSO (Days Sales Outstanding) = how long it takes to get paid (lower is better).  
+**Gross Charges** = what they bill patients  
+**Contractual Adjustments** = discounts they must give to insurance companies  
+**Collections** = actual cash received  
+**DSO (Days Sales Outstanding)** = how long it takes to get paid (lower is better).  
 
-2. Operating Expenses (operating_expenses_2024.csv)  
-This breaks down where the clinic spends money by category and quarter. Personnel Costs = salaries and benefits (usually 60-70% of healthcare expenses), Facility Costs = rent, utilities, insurance. Variance % shows if they spent more or less than budgeted.
-3. A/R Aging Analysis (ar_aging_analysis.csv)  
-A/R = Accounts Receivable = money owed to the clinic for services already provided. The aging columns (0-30 days, 31-60 days, etc.) show how long bills have been unpaid. Older bills are harder to collect, so clinics want most A/R in the "Current" column.
-4. Provider Productivity (provider_productivity_2024.csv)  
-This measures how productive each doctor/nurse practitioner is. RVUs (Relative Value Units) = a standard way to measure medical work complexity - a simple office visit might be 1 RVU, surgery might be 20 RVUs. Revenue per RVU shows how efficiently they generate income.
-5. Payer Mix Analysis (payer_mix_analysis.csv)  
-This shows what percentage of patients have different insurance types. Commercial insurance pays the best rates, Medicare/Medicaid pay lower government rates, Self-Pay patients often can't pay at all. Reimbursement Rate = what insurance actually pays vs. what the clinic bills.
+2. **Operating Expenses (operating_expenses_2024.csv)**  
+This breaks down where the clinic spends money by category and quarter.  
+**Personnel Costs** = salaries and benefits (usually 60-70% of healthcare expenses)  
+**Facility Costs** = rent, utilities, insurance.  
+**Variance %** =  shows if they spent more or less than budgeted.  
+
+3. **A/R Aging Analysis (ar_aging_analysis.csv)**  
+**A/R** = Accounts Receivable = money owed to the clinic for services already provided.  
+The **aging columns** (0-30 days, 31-60 days, etc.) show how long bills have been unpaid. Older bills are harder to collect, so clinics want most A/R in the **"Current"** column.  
+
+4. **Provider Productivity (provider_productivity_2024.csv)**  
+This measures how productive each doctor/nurse practitioner is.  
+**RVUs (Relative Value Units)** = a standard way to measure medical work complexity - a simple office visit might be 1 RVU, surgery might be 20 RVUs. Revenue per RVU shows how efficiently they generate income.  
+
+5. **Payer Mix Analysis (payer_mix_analysis.csv)**  
+This shows what percentage of patients have different insurance types.  
+**Commercial insurance** pays the best rates, **Medicare/Medicaid** pay lower government rates, **Self-Pay** patients often can't pay at all.  
+**Reimbursement Rate** = what insurance actually pays vs. what the clinic bills.
