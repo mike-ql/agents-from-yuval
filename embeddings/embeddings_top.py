@@ -1,13 +1,21 @@
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 import extract_pdf
+from sentence_transformers import SentenceTransformer
+
 
 
 def prepare_agent():
     doc_texts = extract_pdf.extract_all_docs()
     all_chunks = make_chunks(doc_texts)
     print(f"Created {len(all_chunks)} chunks")
-    print(all_chunks[0])
+    embeddings = create_embeddings(all_chunks)
+    print(len(embeddings), embeddings[0])
 
+
+def create_embeddings(all_chunks):
+    model = SentenceTransformer('all-MiniLM-L6-v2')
+    embeddings = model.encode(all_chunks)
+    return embeddings
 
 
 def make_chunks(list_of_texts):
