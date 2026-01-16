@@ -1,0 +1,7 @@
+# These are the libraries we use.
+# we use pip-compile (from pip-tools) to create requirements.txt:
+#   pip-compile requirements.in -o requirements.txt
+
+notebook
+torchvision
+matplotlib
