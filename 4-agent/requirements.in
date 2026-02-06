@@ -1,0 +1,24 @@
+# This file is managed manually
+# Is is mean for humans, and document the libraries we are using.
+# From this file - the net-tool 
+#
+# Use: 
+#      pip-compile .\requirements.in > requirements.txt
+
+# Basic Infrastructure
+notebook>=7.5
+pip>=25
+python-dotenv
+
+# The "Brain" (Gemma 3 local)
+langchain-ollama>=0.2.0
+langchain-openai
+
+# The "Hands" (Tools)
+langchain-community>=0.3.0
+
+# The "Engine" (Required for ALL agents in 2026)
+langgraph>=0.3.0
+langchain>=0.3.0
+# Required for the llm-math tool
+numexpr>=2.10.0
