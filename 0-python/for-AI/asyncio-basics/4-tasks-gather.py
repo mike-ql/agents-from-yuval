@@ -6,20 +6,15 @@ async def say(what, when):
     print(f'  {what} {when}')
     return when
 
-# WITHOUT TASKS
-print('WITHOUT TASKS')
 
-asyncio.run(say('hello', 5))   # Loop born and dies
-asyncio.run(say('goodbye', 5))   # Loop born and dies
-
-# WITH TASKS
-print('WITH TASKS')
 async def main():
     task1 = asyncio.create_task(say('hello', 5))
     task2 = asyncio.create_task(say('goodbye', 5))
-    res1 = await task1
-    res2 = await task2 
-    print(res1, res2)
+    results = await asyncio.gather(
+        task1,
+        task2
+    )
+    print(results)
 
 
 loop = asyncio.new_event_loop()  # DOES NOT CREATE A LOOP
